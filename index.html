@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive UAE History</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <h1>UAE History Interactive</h1>
+    <nav class="navbar">
+      <a href="#section1">Pre-Islamic History</a>
+      <a href="#section2">UAE Space Program</a>
+      <a href="#section3">Global Diplomacy</a>
+      <a href="#section4">Landmarks</a>
+      <a href="#timeline">Timeline</a> <!-- Added Timeline link -->
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="content">
+    <!-- Timeline Section -->
+    <section id="timeline" class="section">
+      <h2>UAE History Timeline</h2>
+      <div class="timeline">
+        <!-- Timeline Item 1 -->
+        <div class="timeline-item">
+          <div class="timeline-date">1971</div>
+          <div class="timeline-content">
+            <h3>Formation of the UAE</h3>
+            <p>The United Arab Emirates was officially formed on December 2, 1971, uniting seven emirates into one country.</p>
+          </div>
+        </div>
+
+        <!-- Timeline Item 2 -->
+        <div class="timeline-item">
+          <div class="timeline-date">2009</div>
+          <div class="timeline-content">
+            <h3>UAE Mars Mission Announcement</h3>
+            <p>The UAE announced plans to launch its first mission to Mars, paving the way for the country's space exploration ambitions.</p>
+          </div>
+        </div>
+
+        <!-- Timeline Item 3 -->
+        <div class="timeline-item">
+          <div class="timeline-date">2010</div>
+          <div class="timeline-content">
+            <h3>Burj Khalifa Completion</h3>
+            <p>The world's tallest building, the Burj Khalifa, was completed in Dubai, showcasing the UAE's architectural innovation.</p>
+          </div>
+        </div>
+
+        <!-- Timeline Item 4 -->
+        <div class="timeline-item">
+          <div class="timeline-date">2020</div>
+          <div class="timeline-content">
+            <h3>Hope Probe Mission to Mars</h3>
+            <p>The UAE successfully launched its Hope Probe, the first interplanetary mission by an Arab country, to Mars.</p>
+          </div>
+        </div>
+
+        <!-- Timeline Item 5 -->
+        <div class="timeline-item">
+          <div class="timeline-date">2021</div>
+          <div class="timeline-content">
+            <h3>Golden Jubilee of the UAE</h3>
+            <p>The UAE celebrated its 50th anniversary, marking half a century of remarkable growth and achievements.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Cards Section -->
+    <section id="section1" class="section">
+      <h2>Explore the UAE's History</h2>
+      <div class="card-container">
+        <!-- Card 1: Pre-Islamic History -->
+        <div class="card" onclick="openModal('preIslamicModal')">
+          <div class="card-icon">🏺</div>
+          <h3>Pre-Islamic History</h3>
+          <p>Discover the ancient civilizations that shaped the UAE.</p>
+        </div>
+        <!-- Card 2: Space Program -->
+        <div class="card" onclick="openModal('spaceProgramModal')">
+          <div class="card-icon">🚀</div>
+          <h3>UAE Space Program</h3>
+          <p>Learn about the UAE’s achievements in space exploration.</p>
+        </div>
+        <!-- Card 3: Global Diplomacy -->
+        <div class="card" onclick="openModal('globalDiplomacyModal')">
+          <div class="card-icon">🌍</div>
+          <h3>UAE's Role in Diplomacy</h3>
+          <p>Explore the UAE's international influence.</p>
+        </div>
+        <!-- Card 4: Famous Landmarks -->
+        <div class="card" onclick="openModal('landmarksModal')">
+          <div class="card-icon">🏙️</div>
+          <h3>Famous Landmarks</h3>
+          <p>See the landmarks that define the UAE's architectural beauty.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modals for Card Content -->
+    <div id="preIslamicModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('preIslamicModal')">&times;</span>
+        <h3>Pre-Islamic UAE History</h3>
+        <p>The UAE’s early civilizations included the Dilmun and Thamudic cultures, whose artifacts have been found around the region. Archaeological sites in Al Ain and Jebel Hafeet are key to understanding the early history of the UAE.</p>
+      </div>
+    </div>
+
+    <div id="spaceProgramModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('spaceProgramModal')">&times;</span>
+        <h3>The UAE Space Program</h3>
+        <p>The Hope Probe launched by the UAE in 2020 is a symbol of the country’s ambitions in space. The UAE Mars 2117 Project aims to establish the first human colony on Mars.</p>
+      </div>
+    </div>
+
+    <div id="globalDiplomacyModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('globalDiplomacyModal')">&times;</span>
+        <h3>UAE's Role in Diplomacy</h3>
+        <p>The UAE plays a pivotal role in regional peacekeeping and international diplomacy, with contributions to the International Renewable Energy Agency (IRENA) and various humanitarian missions around the world.</p>
+      </div>
+    </div>
+
+    <div id="landmarksModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('landmarksModal')">&times;</span>
+        <h3>Famous Landmarks of the UAE</h3>
+        <p>Explore the iconic Burj Khalifa, Burj Al Arab, and the Sheikh Zayed Grand Mosque, which are symbols of the UAE’s modern identity and commitment to innovation and cultural heritage.</p>
+      </div>
+    </div>
+
+    <!-- Footer with Credit Section -->
+    <footer class="footer">
+      <p>Made by Sachin-8F & Ehsan-8F | UAE History Interactive</p>
+    </footer>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
